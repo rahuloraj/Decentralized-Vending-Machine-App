@@ -1,0 +1,177 @@
+/* Error styles */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  background-color: #171d28;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.retry-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #2979ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.retry-button:hover {
+  background-color: #2962ff;
+}
+
+/* No web3 styles  */
+.no-web3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111827;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(63, 94, 251, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(90, 131, 255, 0.05) 0%, transparent 50%);
+}
+
+.no-web3-content {
+  text-align: center;
+  padding: 3rem;
+  background-color: #1f2937;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: white;
+  max-width: 450px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.no-web3-content h2 {
+  margin-bottom: 1.5rem;
+  color: #60a5fa;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.no-web3-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.install-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.9rem 2rem;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+.install-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(59, 130, 246, 0.4);
+  cursor: pointer;
+}
+
+.install-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.metamask-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* No contract styles */
+.no-contract-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.no-contract-content {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f2937;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  max-width: 500px;
+}
+
+.no-contract-content h2 {
+  margin-bottom: 1rem;
+  color: #60a5fa;
+}
+
+.no-contract-content ul {
+  text-align: left;
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.no-contract-content li {
+  margin: 0.5rem 0;
+}
+
+.network-switch-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.network-switch-button:hover {
+  background-color: #2563eb;
+}
+
+.wallet-alternatives {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.wallet-alternatives a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.wallet-alternatives a:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}

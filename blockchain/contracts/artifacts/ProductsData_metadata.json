@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "initializeProducts",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "products",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "code",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "imageCID",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ProductsData.sol": "ProductsData"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ProductLibrary.sol": {
+			"keccak256": "0xa480774762cae002b484b8fb448476b30153303b8fa600af574aa0b6aa1503ee",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e86496f283d453b76ebcf1cc8c1603eaf33ebd0d33bfa9b3d2338cd272f11747",
+				"dweb:/ipfs/QmeGVJvnHJX6hwBfeCohxEGYDpPu1zXi5TWHSoGQFRCqE8"
+			]
+		},
+		"contracts/ProductsData.sol": {
+			"keccak256": "0xe1ddcedc1da3c6153a39e9926b51dff732080832cb8e6c3c1b922c503b2efcac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cf57d8399716b977a2109800a632a49d7670aeb7bb04f750be0c2d37d78901cc",
+				"dweb:/ipfs/QmfL9TGTrzqsqaMVu9EB5RkGjXhpzYv5rwLGeuQA234dPV"
+			]
+		}
+	},
+	"version": 1
+}

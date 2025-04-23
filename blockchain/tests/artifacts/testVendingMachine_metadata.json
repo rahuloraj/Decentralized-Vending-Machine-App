@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "beforeAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testAddFundsOnce",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testConsumedProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testGetAllProductsSetup",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testInitialBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testOwnerIsSetCorrectly",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testPurchaseProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "vendingMachine",
+				"outputs": [
+					{
+						"internalType": "contract VendingMachine",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"testAddFundsOnce()": {
+					"notice": "#value: 5000000000000000000 #sender: owner"
+				},
+				"testConsumedProduct()": {
+					"notice": "#sender: owner"
+				},
+				"testInitialBalance()": {
+					"notice": "Test initial balance"
+				},
+				"testPurchaseProduct()": {
+					"notice": "#sender: owner"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/VendingMachine_test.sol": "testVendingMachine"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ProductLibrary.sol": {
+			"keccak256": "0x80a0f8970b04b43ae4c0b22018db423b93ad1ccac010d88ce65290887f64534b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ffa446611bbef6b6449989b8052b3225e99cc988d6cac4b22b5d0d1894634e9a",
+				"dweb:/ipfs/Qmd66DnNTAc45eQusuHL9QvsS9PZf6zcVwWC3Ffcfg73vc"
+			]
+		},
+		"contracts/VendingMachine.sol": {
+			"keccak256": "0x50aecfe787116fc2f61b8f9e546ca1abece56100dab9055887938e0cafccb1ff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://99ce778aca14635e0e8de135f31629c1320ba90aef83edd0cc20042ef7916256",
+				"dweb:/ipfs/QmPxC5yeBhUVoSRan7WLVgejDQCz4kFHcNqZpC3HX64n1j"
+			]
+		},
+		"remix_accounts.sol": {
+			"keccak256": "0xab088ffd1cd1033f54c2486f151b5d02281a3b76724c8e6f48479c25a4f7809e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5ddaf9976b1838f7028cbedfaf7f6e1cf8c898e100221176ff1406ee8b599f23",
+				"dweb:/ipfs/QmX2FYLXYyo5Cn55ZX2CfngpscSh4mQhcMVzQdQsh2vqcG"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/VendingMachine_test.sol": {
+			"keccak256": "0x086a4c00b0ec7c80a11e5419db45d7cff6cd6c27ac21cbe8975268acea55ef24",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa67cd96dfe8c37c285fec78001440f7bd58dc9f041221116fc911d26e9b8b27",
+				"dweb:/ipfs/QmNb4ZpfreMf3rbVveJq8tnMyJuubCMjveNqS9o5jT1dBu"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,67 @@
+/* Payment section styles */
+.payment-section {
+  background-color: #171d28;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.amount-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.amount-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.add-button {
+  padding: 10px 15px;
+  background-color: #3f51b5;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quick-amounts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-amounts button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #546e7a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quick-amounts button:hover {
+  background-color: #607d8b;
+}
+
+.view-purchases-button {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #2979ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.view-purchases-button:hover {
+  background-color: #448aff;
+}

@@ -1,0 +1,126 @@
+/* Purchases modal styles */
+.purchases-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.purchases-content {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: hidden;
+  color: #333;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.purchases-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.purchases-header h2 {
+  margin: 0;
+  color: #333;
+  background-color: transparent;
+  border: none;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 11;
+}
+
+.no-purchases {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.no-purchases p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color: #666;
+  font-size: 14px;
+}
+
+.purchases-list {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.purchases-tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 51px; /* Height of the header + border */
+  background-color: #fff;
+  z-index: 9;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-button.active {
+  color: #2979ff;
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #2979ff;
+}
+
+/* Tab content styles */
+.tab-content {
+  display: none;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.tab-content.active {
+  display: block;
+}

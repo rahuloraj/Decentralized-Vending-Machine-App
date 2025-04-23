@@ -1,0 +1,44 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: rgba(243, 243, 243, 0.939);
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #353f52;
+  background-color: #171d28;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+h3 {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

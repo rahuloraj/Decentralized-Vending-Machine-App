@@ -1,0 +1,51 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .product-item {
+    width: 80px;
+    height: 90px;
+  }
+  
+  .product-image {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app {
+    padding: 20px;
+    place-content: center;
+    height: 100vh;
+  }
+
+  .vending-machine {
+    border-radius: 10px;
+  }
+
+  .purchase-item {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .purchase-image {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+  .purchase-status {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .consume-button,
+  .consumed-info {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

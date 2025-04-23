@@ -1,0 +1,716 @@
+{
+	"id": "fb034634f7ee78024d6a569b65120d1c",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/ProductsLibrary.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nlibrary ProductData {\n    enum PurchaseStatus { Available, Consumed }\n\n    struct Product {\n        string code;\n        uint256 price; // Price in Gwei\n        string name;\n        string imageCID;\n    }\n\n    struct Purchase {\n        address buyer;\n        string productId;\n        uint timestamp;\n        PurchaseStatus status;\n    }\n}\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/ProductsLibrary.sol": {
+				"ProductData": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/ProductsLibrary.sol\":57:396  library ProductData {... */\n  dataSize(sub_0)\n  dataOffset(sub_0)\n  0x0b\n  dup3\n  dup3\n  dup3\n  codecopy\n  dup1\n  mload\n  0x00\n  byte\n  0x73\n  eq\n  tag_1\n  jumpi\n  mstore(0x00, 0x4e487b7100000000000000000000000000000000000000000000000000000000)\n  mstore(0x04, 0x00)\n  revert(0x00, 0x24)\ntag_1:\n  mstore(0x00, address)\n  0x73\n  dup2\n  mstore8\n  dup3\n  dup2\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/ProductsLibrary.sol\":57:396  library ProductData {... */\n      eq(address, deployTimeAddress())\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212207b672011ab8b079ba1cf2c195c3b117b905c9c43e0f24d1effa8c96a3814fc5864736f6c634300081a0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6055604b600b8282823980515f1a607314603f577f4e487b71000000000000000000000000000000000000000000000000000000005f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f80fdfea26469706673582212207b672011ab8b079ba1cf2c195c3b117b905c9c43e0f24d1effa8c96a3814fc5864736f6c634300081a0033",
+							"opcodes": "PUSH1 0x55 PUSH1 0x4B PUSH1 0xB DUP3 DUP3 DUP3 CODECOPY DUP1 MLOAD PUSH0 BYTE PUSH1 0x73 EQ PUSH1 0x3F JUMPI PUSH32 0x4E487B7100000000000000000000000000000000000000000000000000000000 PUSH0 MSTORE PUSH0 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST ADDRESS PUSH0 MSTORE PUSH1 0x73 DUP2 MSTORE8 DUP3 DUP2 RETURN INVALID PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH28 0x672011AB8B079BA1CF2C195C3B117B905C9C43E0F24D1EFFA8C96A38 EQ 0xFC PC PUSH5 0x736F6C6343 STOP ADDMOD BYTE STOP CALLER ",
+							"sourceMap": "57:339:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "730000000000000000000000000000000000000000301460806040525f80fdfea26469706673582212207b672011ab8b079ba1cf2c195c3b117b905c9c43e0f24d1effa8c96a3814fc5864736f6c634300081a0033",
+							"opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH28 0x672011AB8B079BA1CF2C195C3B117B905C9C43E0F24D1EFFA8C96A38 EQ 0xFC PC PUSH5 0x736F6C6343 STOP ADDMOD BYTE STOP CALLER ",
+							"sourceMap": "57:339:0:-:0;;;;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "17000",
+								"executionCost": "92",
+								"totalCost": "17092"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "B"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "DUP3",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "DUP3",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "DUP3",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "MLOAD",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "BYTE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "73"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "EQ",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "4E487B7100000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "4"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "24"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "ADDRESS",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "73"
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "MSTORE8",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "DUP3",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 396,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212207b672011ab8b079ba1cf2c195c3b117b905c9c43e0f24d1effa8c96a3814fc5864736f6c634300081a0033",
+									".code": [
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "PUSHDEPLOYADDRESS",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "ADDRESS",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "EQ",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 396,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"contracts/ProductsLibrary.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/ProductsLibrary.sol\":\"ProductData\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ProductsLibrary.sol\":{\"keccak256\":\"0xbd8547f4cb2897cfe9cc43a271086d78401c498f9224b9fbd911f535ab9045ee\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4538c87ccb8b5e90d75f2fc0dc9b23504aa93c447938a746475f826a378fe6c3\",\"dweb:/ipfs/QmZaYzVU8ecHJ7pf6prgGogSEQEJSna6PL52WSPYyEaWdW\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/ProductsLibrary.sol": {
+				"ast": {
+					"absolutePath": "contracts/ProductsLibrary.sol",
+					"exportedSymbols": {
+						"ProductData": [
+							24
+						]
+					},
+					"id": 25,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "ProductData",
+							"contractDependencies": [],
+							"contractKind": "library",
+							"fullyImplemented": true,
+							"id": 24,
+							"linearizedBaseContracts": [
+								24
+							],
+							"name": "ProductData",
+							"nameLocation": "65:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "ProductData.PurchaseStatus",
+									"id": 4,
+									"members": [
+										{
+											"id": 2,
+											"name": "Available",
+											"nameLocation": "105:9:0",
+											"nodeType": "EnumValue",
+											"src": "105:9:0"
+										},
+										{
+											"id": 3,
+											"name": "Consumed",
+											"nameLocation": "116:8:0",
+											"nodeType": "EnumValue",
+											"src": "116:8:0"
+										}
+									],
+									"name": "PurchaseStatus",
+									"nameLocation": "88:14:0",
+									"nodeType": "EnumDefinition",
+									"src": "83:43:0"
+								},
+								{
+									"canonicalName": "ProductData.Product",
+									"id": 13,
+									"members": [
+										{
+											"constant": false,
+											"id": 6,
+											"mutability": "mutable",
+											"name": "code",
+											"nameLocation": "164:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 13,
+											"src": "157:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 5,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "157:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 8,
+											"mutability": "mutable",
+											"name": "price",
+											"nameLocation": "186:5:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 13,
+											"src": "178:13:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 7,
+												"name": "uint256",
+												"nodeType": "ElementaryTypeName",
+												"src": "178:7:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 10,
+											"mutability": "mutable",
+											"name": "name",
+											"nameLocation": "225:4:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 13,
+											"src": "218:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 9,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "218:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 12,
+											"mutability": "mutable",
+											"name": "imageCID",
+											"nameLocation": "246:8:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 13,
+											"src": "239:15:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 11,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "239:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Product",
+									"nameLocation": "139:7:0",
+									"nodeType": "StructDefinition",
+									"scope": 24,
+									"src": "132:129:0",
+									"visibility": "public"
+								},
+								{
+									"canonicalName": "ProductData.Purchase",
+									"id": 23,
+									"members": [
+										{
+											"constant": false,
+											"id": 15,
+											"mutability": "mutable",
+											"name": "buyer",
+											"nameLocation": "301:5:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 23,
+											"src": "293:13:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											},
+											"typeName": {
+												"id": 14,
+												"name": "address",
+												"nodeType": "ElementaryTypeName",
+												"src": "293:7:0",
+												"stateMutability": "nonpayable",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 17,
+											"mutability": "mutable",
+											"name": "productId",
+											"nameLocation": "323:9:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 23,
+											"src": "316:16:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 16,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "316:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 19,
+											"mutability": "mutable",
+											"name": "timestamp",
+											"nameLocation": "347:9:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 23,
+											"src": "342:14:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 18,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "342:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 22,
+											"mutability": "mutable",
+											"name": "status",
+											"nameLocation": "381:6:0",
+											"nodeType": "VariableDeclaration",
+											"scope": 23,
+											"src": "366:21:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_enum$_PurchaseStatus_$4",
+												"typeString": "enum ProductData.PurchaseStatus"
+											},
+											"typeName": {
+												"id": 21,
+												"nodeType": "UserDefinedTypeName",
+												"pathNode": {
+													"id": 20,
+													"name": "PurchaseStatus",
+													"nameLocations": [
+														"366:14:0"
+													],
+													"nodeType": "IdentifierPath",
+													"referencedDeclaration": 4,
+													"src": "366:14:0"
+												},
+												"referencedDeclaration": 4,
+												"src": "366:14:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_enum$_PurchaseStatus_$4",
+													"typeString": "enum ProductData.PurchaseStatus"
+												}
+											},
+											"visibility": "internal"
+										}
+									],
+									"name": "Purchase",
+									"nameLocation": "274:8:0",
+									"nodeType": "StructDefinition",
+									"scope": 24,
+									"src": "267:127:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 25,
+							"src": "57:339:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "32:365:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

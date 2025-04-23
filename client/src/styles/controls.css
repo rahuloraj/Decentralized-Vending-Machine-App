@@ -1,0 +1,89 @@
+/* Control section styles */
+.control-section {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.keypad-section {
+  background-color: #171d28;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.display {
+  background-color: #000;
+  color: #0f0;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.display-text {
+  font-family: monospace;
+}
+
+.display-amount {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.keypad-button {
+  padding: 15px 0;
+  background-color: #26303f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.keypad-button:hover {
+  background-color: #323f53;
+}
+
+.clear-button {
+  background-color: #c62828;
+  grid-column: span 3;
+}
+
+.clear-button:hover {
+  background-color: #e53935;
+}
+
+.purchase-button {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.purchase-button:hover {
+  background-color: #66bb6a;
+}
+
+.purchase-button:disabled {
+  background-color: #878787;
+  cursor: not-allowed;
+}
